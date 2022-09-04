@@ -13,8 +13,8 @@ terraform {
 
 provider "aws" {
   region = var.region
-  access_key = "AKIAW4GN5GZLGBCX4IFW"
-  secret_key = "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"
+  access_key = "<aws access key>"
+  secret_key = "<aws secret key>"
 }
 
 // Initialize provider in "MWS" mode to provision the new workspace.
