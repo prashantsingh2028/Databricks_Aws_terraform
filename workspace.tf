@@ -27,15 +27,15 @@ provider "databricks" {
   host = databricks_mws_workspaces.this.workspace_url
 }
 
-// Create a Databricks personal access token, to provision entities within the workspace.
+/* // Create a Databricks personal access token, to provision entities within the workspace.
 resource "databricks_token" "pat" {
   provider = databricks.created_workspace
   comment  = "Terraform Provisioning"
   lifetime_seconds = 86400
-}
+} */
 
-// Export the Databricks personal access token's value, for integration tests to run on.
+/* // Export the Databricks personal access token's value, for integration tests to run on.
 output "databricks_token" {
   value     = databricks_token.pat.token_value
   sensitive = true
-}
+} */
