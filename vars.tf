@@ -3,7 +3,7 @@ variable "databricks_account_password" {}
 variable "databricks_account_id" {}
 
 variable "tags" {
-  default = "testws"
+  default = {}
 }
 
 variable "cidr_block" {
