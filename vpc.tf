@@ -11,7 +11,7 @@ module "vpc" {
   name = local.prefix
   cidr = var.cidr_block
   azs  = data.aws_availability_zones.available.names
-  tags = var.tags
+  tags = var.
 
   enable_dns_hostnames = true
   enable_nat_gateway   = true
